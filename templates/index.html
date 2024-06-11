@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Algorithm Showcase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles go here */
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: whitesmoke;">
+        <div class="flex justify-center">
+            <h1 class="text-3xl font-bold text-black-400 p-10">
+                Pathfinding Algorithm Showcase
+            </h1>
+            <br />
+        </div>
+        <div class="flex justify-center text-center">
+            <h3 class="text-2xl font-bold text-red-400 mb-7">Visualization Steps</h3>
+        </div>
+        <div class="flex justify-center">
+            <ol class="list-decimal">
+                <li class="mb-2 font-bold">First, select the Source Cell (Orange)</li>
+                <li class="mb-2 font-bold">Then, select the Destination Cell (Turquoise)</li>
+                <li class="mb-2 font-bold">Then, add barriers according to your convenience (Black)</li>
+                <li class="mb-2 font-bold">Press Space to start the Visualization</li>
+                <li class="font-bold">Press C to clear the maze and restart</li>
+            </ol>
+        </div>
+        <div class="container mt-5">
+            <div class="flex justify-center my-5">
+                <h3 class="text-2xl font-bold text-red-400">
+                    Uninformed Search Algorithms
+                </h3>
+            </div>
+            <div class="row my-4">
+                <!-- BFS Algorithm Card -->
+                <div class="col-md-4">
+                    <div class="card h-full">
+                        <div class="card-header flex justify-center">
+                            <h5 class="font-bold text-xl">Breadth-First Search (BFS)</h5>
+                        </div>
+                        <div class="card-body p-10">
+                            <p class="card-text text-center">
+                                A graph traversal algorithm that starts at the root node and explores all the neighboring nodes at the present depth before moving on to the nodes at the next depth level.
+                            </p>
+                        </div>
+                        <div class="card-footer flex justify-center">
+                            <a href="/bfs" class="btn btn-primary">Explore BFS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DFS Algorithm Card -->
+                <div class="col-md-4">
+                    <div class="card h-full">
+                        <div class="card-header flex justify-center">
+                            <h5 class="font-bold text-xl">Depth-First Search (DFS)</h5>
+                        </div>
+                        <div class="card-body p-10">
+                            <p class="card-text text-center">
+                                A graph traversal algorithm that starts at the root node and explores as far as possible along each branch before backtracking.
+                            </p>
+                        </div>
+                        <div class="card-footer flex justify-center">
+                            <a href="/dfs" class="btn btn-primary">Explore DFS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dijakstra Algorithm Card-->
+                <div class="col-md-4">
+                    <div class="card h-full">
+                        <div class="card-header flex justify-center">
+                            <h5 class="font-bold text-xl">Dijkstra Search</h5>
+                        </div>
+                        <div class="card-body p-10">
+                            <p class="card-text text-center">
+                                A popular pathfinding algorithm that efficiently finds the shortest path between nodes in a weighted graph.
+                            </p>
+                        </div>
+                        <div class="card-footer flex justify-center">
+                            <a href="/dijkstra" class="btn btn-primary">Explore Dijkstra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center my-5">
+                <h3 class="text-2xl font-bold text-red-400">
+                    Informed Search Algorithms
+                </h3>
+            </div>
+
+            <div class="row my-4">
+                <!-- A* Algorithm Card -->
+                <div class="col-md-4">
+                    <div class="card h-full">
+                        <div class="card-header flex justify-center">
+                            <h5 class="font-bold text-xl">A* Search</h5>
+                        </div>
+                        <div class="card-body p-10">
+                            <p class="card-text text-center">
+                                A popular pathfinding algorithm that efficiently finds the shortest path between nodes in a weighted graph.
+                            </p>
+                        </div>
+                        <div class="card-footer flex justify-center">
+                            <a href="/a_star" class="btn btn-primary">Explore A*</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Best Fit Algorithm Card -->
+                <div class="col-md-4">
+                    <div class="card h-full">
+                        <div class="card-header flex justify-center">
+                            <h5 class="font-bold text-xl">Best Fit Search</h5>
+                        </div>
+                        <div class="card-body p-10">
+                            <p class="card-text text-center">
+                                An algorithm that intelligently explores neighboring nodes based on a heuristic to efficiently find the shortest path.
+                            </p>
+                        </div>
+                        <div class="card-footer flex justify-center">
+                            <a href="/best_fit" class="btn btn-primary">Explore Best Fit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hill Climbing Algorithm Card -->
+                <div class="col-md-4">
+                    <div class="card h-full">
+                        <div class="card-header flex justify-center">
+                            <h5 class="font-bold text-xl">Hill Climbing Search</h5>
+                        </div>
+                        <div class="card-body p-10">
+                            <p class="card-text text-center">
+                                A local search algorithm that continuously moves in the direction of increasing value to find the peak of the mountain.
+                            </p>
+                        </div>
+                        <div class="card-footer flex justify-center">
+                            <a href="/hill_climbing" class="btn btn-primary">Explore Hill Climbing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
